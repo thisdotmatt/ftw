@@ -46,11 +46,11 @@
 }
 
 #chat-display {
-    height: 350px;
+    height: 300px;
     overflow-x: hidden;
     overflow-y: scroll;
 
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .image-container {
@@ -59,7 +59,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 14px;
 }
 
 
