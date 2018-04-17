@@ -1,0 +1,71 @@
+/* NOT COMPLETE! DO NOT ADD TO INDEX.HTML YET */
+
+.navbar navbar-expand navbar-light bg-light {
+   background-color: #38ACEC
+}
+
+.navbar-brand {
+   text-align : center;
+   font-weight : bold;
+   
+   text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.navbar-toggler-icon {
+    font-size: 24px;
+    color: #000000;
+}
+
+
+/* animation */
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+.container {
+	background-color: #232323;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	
+	svg {
+		max-width: 45rem;
+		width: 100%;
+		height: auto;
+		fill: none;
+		stroke: white;
+		stroke-width: 4;
+		
+		tspan > tspan {
+			stroke-dasharray: 1500;
+			stroke-dashoffset: -1500;
+			
+			@for $i from 1 through 15 {
+				
+				&:nth-of-type(#{$i}) {
+					animation: draw 300ms #{$i * 150}ms forwards;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+@keyframes draw {
+	
+	100% {
+		stroke-dashoffset: 0;
+	}
+  }
