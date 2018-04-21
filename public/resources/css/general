@@ -1,7 +1,7 @@
 /* NOT COMPLETE! DO NOT ADD TO INDEX.HTML YET */
 
 .navbar navbar-expand navbar-light bg-light {
-   background-color: #38ACEC
+   background-color: ##4fb0b0
 }
 
 .navbar-brand {
